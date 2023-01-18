@@ -3,63 +3,76 @@
 <!-- Like section 2, we now built the "order" page. You need to populate it with following contents. -->
 <!-- NOTE: Don't worry about the style. You will work on the style of the page next week! -->
 
-<!-- TODO: Find the best place to put this tag. -->
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>ABC Cabinets</title>
+    </head>
 
+    <body>
+        <header>
+            <h1>ABC Cabinet</h1>
+            <nav>
+                <h3>Navigation</h3>
+                <a href='main.html' class="btn btn-primary">Main Page</a>
+                <a href='order.html' class="btn btn-primary">Order Page</a>
+            </nav>
+        </header>
 
-<!-- TODO: Find the best place to put this tag. -->
-<title>ABC Cabinets</title>
+        <div id='content'>
+            <form>
+                <h3>Order Form</h3>
+                <label for="name">Name: </label><br/>
+                <input type='text' id='name' name='name' placeholder="Enter name"><br/><br/>
 
+                <div>
+                    <a>Address: </a><br>
+                    <textarea id="address" name="address" rows="5" cols="33"></textarea>
+                </div>
 
-<!-- TODO: Find the best place to put this tag. -->
-<h1>ABC Cabinet</h1>
+                <a>Method of payment: </a><br/>
+                <input type='radio' id='paymentA' name='paymentA' value='Amex'>
+                <label for="paymentA">Amex</label><br/>
 
+                <input type='radio' id='paymentV' name='paymentV' value='Visa'>
+                <label for="paymentV">Visa</label><br/>
 
-<!-- TODO: Find the best place to put these tags. -->
-<h3>Navigation</h3>
-<a href='main.html' class="btn btn-primary">Main Page</a>
-<a href='order.html' class="btn btn-primary">Order Page</a>
+                <input type='radio' id='paymentMC' name='paymentMC' value='MasterCard'>
+                <label for="paymentMC">MasterCard</label><br/>
 
-        
-<!-- TODO: Find the best place to put these tags. -->  
-<h3>Order Form</h3>
+                <a>Credit Card #: </a> <input type='text' id='creditCard' name='creditCard'><br/>
 
-<!-- TODO: You need to order the following tags to build a page similar to the image posted on the first page of this repo. -->
+                <a>Items: </a><br/>
+                <label for="double">Double Cabinet $50.00</label><br/>
+                <input type="checkbox" id="double" name="double" value="double">
 
-<input type="reset" />
-<option value="red">Red</option>
-<a>Items: </a><br/>
-<label for="paymentA">Amex</label><br/>
-<option value="black">Black</option>
-<option value="blue">Blue</option>
+                <label for="drawer">Drawer $20.00</label><br/>
+                <input type="checkbox" id="drawer" name="drawer" value="drawer">
 
-<input type="checkbox" id="double" name="double" value="double">
-<a>Method of payment: </a><br/>
-<textarea id="address" name="address" rows="5" cols="33"></textarea>
-<option value="green">Green</option>
+                <label for="single">Single Cabinet $30.00</label><br/>
+                <input type="checkbox" id="single" name="single" value="single">
 
-<input type='text' id='name' name='name' placeholder="Enter name"><br/><br/>
-<input type='radio' id='paymentA' name='paymentA' value='Amex'>
-<input type="submit" />
-<label for="double">Double Cabinet $50.00</label><br/>
-<a>Address: </a><br>
+                <a>Colour: </a>
+                <select>
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="white">White</option>
+                </select>
 
-<input type='radio' id='paymentV' name='paymentV' value='Visa'>
-</select>
-<input type="checkbox" id="drawer" name="drawer" value="drawer">
-<label for="name">Name: </label><br/>
-<label for="drawer">Drawer $20.00</label><br/>
-<a>Colour: </a>
-<input type="checkbox" id="single" name="single" value="single">
-<label for="paymentMC">MasterCard</label><br/>
-<label for="paymentV">Visa</label><br/>
-<select>
+                <div>
+                    <input type="reset" />
+                    <input type="submit" />
+                </div>
+            </form>
+        </div>
 
-<a>Credit Card #: </a> <input type='text' id='creditCard' name='creditCard'><br/>
-<option value="white">White</option>
+        <footer></footer>
+    </body>
+</html>
 
-<input type='radio' id='paymentMC' name='paymentMC' value='MasterCard'>
-<label for="single">Single Cabinet $30.00</label><br/>
       
         
         
